@@ -6,7 +6,6 @@ int? b_number = 11;
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
   congestionDetermination(number){
     if(number<5){
       return '空いています';
@@ -37,26 +36,6 @@ class HomeScreen extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
         ],
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: const <Widget>[
-            DrawerHeader(
-              child: Text('学食'),
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-            ),
-            ListTile(
-              title: Text('メニュー１'),
-              trailing: Icon(Icons.arrow_forward),
-            ),
-            ListTile(
-              title: Text('メニュー２'),
-              trailing: Icon(Icons.arrow_forward),
-            ),
-          ],
-        ),
-      ),
 
       body: Center(
         child: GridView.count(
@@ -68,7 +47,7 @@ class HomeScreen extends StatelessWidget {
               elevation: 20.0,
               shadowColor: Colors.black,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(50),
+                borderRadius: BorderRadius.circular(10),
               ),
               clipBehavior:
                 Clip.antiAliasWithSaveLayer,
@@ -96,7 +75,7 @@ class HomeScreen extends StatelessWidget {
               elevation: 20.0,
               shadowColor: Colors.black,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(50),
+                borderRadius: BorderRadius.circular(10),
               ),
               clipBehavior:
                 Clip.antiAliasWithSaveLayer,
@@ -116,6 +95,13 @@ class HomeScreen extends StatelessWidget {
               ),
               
             ),
+            ListView(
+              children: const <Widget>[
+                Text('メニューA'),
+                Text('メニューB'),
+              ],
+            )
+            
           ],
         )
       )
