@@ -1,7 +1,5 @@
 # Solution-challenge-2023 cafe labo
 
-## Overview
-
 An application that solves problems (food loss, crowding, etc.)  in cafeterias.
 
 ## Abstract
