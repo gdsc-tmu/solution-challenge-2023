@@ -34,7 +34,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     BookmarkScreen(),
     NotificationScreen(),
     AccountScreen(),
-
   ];
 
   int _selectedIndex = 0;
